@@ -1,4 +1,4 @@
-from .Integrator import Integrator
+from .Integrator import Integrator, SingleThreadIntegrator
 from .Lyapunov import spectrum_Lyapunov
 
 import numpy as np
@@ -521,7 +521,7 @@ class System:
 
         return XP, XM
 
-    def integration_system(self, t_eval: np.ndarray, ic_system: np.ndarray) -> np.ndarray:
+    def integration_system(self, t_eval: np.ndarray, ic_system: np.ndarray, parallel: bool = True) -> np.ndarray:
         """
         Integrates Pedlosky ODE system given a time grid and a set of initial conditions.
 
@@ -532,6 +532,9 @@ class System:
         
         ic_system: numpy.ndarray (of shape (n_ic, self._kc + 2,))
             Vector of initial conditions
+
+        parallel: bool
+            Whether to integrate the trajectories in parallel or not.
 
         Returns
         -------
@@ -558,7 +561,10 @@ class System:
         func = system_ODE.address
         p = np.array([self._kc, self._gamma, self._a, self._m])
 
-        solution = Integrator(func, t_eval, ic_system, p)
+        if parallel:
+            solution = Integrator(func, t_eval, ic_system, p)
+        else:
+            solution = SingleThreadIntegrator(func, t_eval, ic_system, p)
 
         return solution
     
