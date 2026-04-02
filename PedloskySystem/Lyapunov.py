@@ -134,10 +134,10 @@ def maximal_Lyapunov(system, p, s, n_steps, ic_system, ic_vec, convergence = Fal
         Number of steps for integrating the variational equations
 
     ic_system: numpy.ndarray (of shape (n_ic, N))
-        Initial conditions of the system. The 'n_ic' state vectors should be obtained after a transient integration.
+        Initial conditions of the system. The 'n_ic' state vectors should be obtained after a transient integration
 
     ic_vec: numpy.ndarray (of shape (n_ic, N))
-        Initial tangent vectors of the system. According to the Oseledec Theorem, these vectors can be randomly chosen.
+        Initial tangent vectors of the system. According to the Oseledec Theorem, these vectors can be randomly chosen
 
     convergence: bool
         If 'True', the function returns the convergence of the maximal Lyapunov exponent
@@ -230,7 +230,7 @@ def spectrum_Lyapunov(system, p, s, n_steps, ic_system, convergence = False, ste
         Number of steps for integrating the variational equations
 
     ic_system: numpy.ndarray (of shape (n_ic, N))
-        Initial conditions of the system. The 'n_ic' state vectors should be obtained after a transient integration.
+        Initial conditions of the system. The 'n_ic' state vectors should be obtained after a transient integration
 
     convergence: bool
         If 'True', the function returns the convergence of the maximal Lyapunov exponent
@@ -301,12 +301,3 @@ def spectrum_Lyapunov(system, p, s, n_steps, ic_system, convergence = False, ste
         return spectrum_Lya, spectrum_Lya_convergence
     
     return spectrum_Lya, None
-
-
-if __name__ == "__main__":
-    import time
-    time_start = time.time()
-    A = np.array([[[1, 0, 0], [1, 1, 0], [1, 1, 1]], [[2, 1, 0], [2, 2, - 1], [0, 2, - 2]], [[3, 1, 1], [1, 3, - 1], [3, - 2, 3]]])
-    print(MGS(A))
-    time_end = time.time()
-    print(time_end - time_start)

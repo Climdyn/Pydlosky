@@ -9,7 +9,7 @@ from numbalsoda import lsoda_sig
 @njit
 def h_function(k: int, a: float) -> float:
     """
-    Defines the h function that appears in the system of ODEs, see Eq. (17c) in the paper.
+    Defines the h function that appears in the system of ODEs, see Eq. (16c) in the paper.
 
     Parameters
     ----------
@@ -35,7 +35,7 @@ def h_function(k: int, a: float) -> float:
 @njit
 def g_function(k: int, a: float) -> float:
     """
-    Defines the g function that appears in the system of ODEs, see Eq. (17b) in the paper.
+    Defines the g function that appears in the system of ODEs, see Eq. (16b) in the paper.
 
     Parameters
     ----------
@@ -61,7 +61,7 @@ def g_function(k: int, a: float) -> float:
 @njit
 def f_function(k: int, a: float, m: int) -> float:
     """
-    Defines the f function that appears in the system of ODEs, see Eq. (17a) in the paper.
+    Defines the f function that appears in the system of ODEs, see Eq. (16a) in the paper.
 
     Parameters
     ----------
@@ -190,7 +190,7 @@ def Jacobian_function(X: np.ndarray, kc: int, gamma: float, a: float, m: int) ->
 @njit
 def sum_part(X: np.ndarray, kc: int, a: float, m: int) -> float:
     """
-    Defines the summation part (without the coefficients) of the differential equation for B, see the right-hand side of Eq. (16b) in the paper.
+    Defines the summation part (without the coefficients) of the differential equation for B, see the right-hand side of Eq. (15b) in the paper.
 
     Parameters
     ----------
@@ -337,7 +337,7 @@ class System:
     
     def transit_function_Phi(self, k: int) -> float:
             """
-            Defines the function of the parameters that appears in the sum part of Phi(T, y), see Eq. (19) in the paper.
+            Defines the function of the parameters that appears in the sum part of Phi(T, y), see Eq. (18) in the paper.
 
             Parameters
             ----------
@@ -361,7 +361,7 @@ class System:
     
     def Phi(self, y: float, X: np.ndarray) -> float:
         """
-        Given the solution of the system of ODEs, computes the value of the function Phi(T, y) at time T as defined in Eq. (19) in the paper.
+        Given the solution of the system of ODEs, computes the value of the function Phi(T, y) at time T as defined in Eq. (18) in the paper.
 
         Parameters
         ----------
@@ -369,7 +369,7 @@ class System:
             Rescaled horizontal coordinate
 
         X: numpy.ndarray (of shape (n_ic, len(t_eval), self._kc + 2))
-            Solution of the Pedlosky system obtained by integrating the system of ODEs. n_ic can be equal to 1.
+            Solution of the Pedlosky system obtained by integrating the system of ODEs. n_ic can be equal to 1
 
         Return
         ------
@@ -417,7 +417,7 @@ class System:
         Parameters
         ----------
         X: numpy.ndarray (of shape (n_ic, len(t_eval), self._kc + 2))
-            Solution of the Pedlosky system obtained by integrating the system of ODEs. n_ic can be equal to 1.
+            Solution of the Pedlosky system obtained by integrating the system of ODEs. n_ic can be equal to 1
 
         Returns
         -------
@@ -455,10 +455,10 @@ class System:
         Returns
         -------
         XP: np.ndarray (of shape (kc + 2,))
-            Non-trivial equilibrium point X_+ in the limit of infinite cut-off kc.
+            Non-trivial equilibrium point X_+ in the limit of infinite cut-off kc
 
         XM: np.ndarray (of shape (kc + 2,))
-            Non-trivial equilibrium point X_- in the limit of infinite cut-off kc.
+            Non-trivial equilibrium point X_- in the limit of infinite cut-off kc
 
         Example
         -------
@@ -489,10 +489,10 @@ class System:
         Returns
         -------
         XP: np.ndarray (of shape (kc + 2,))
-            Exact non-trivial equilibrium point X_+ in the limit of finite cut-off kc.
+            Exact non-trivial equilibrium point X_+ in the limit of finite cut-off kc
 
         XM: np.ndarray (of shape (kc + 2,))
-            Exact non-trivial equilibrium point X_- in the limit of finite cut-off kc.
+            Exact non-trivial equilibrium point X_- in the limit of finite cut-off kc
 
         Example
         -------
@@ -534,7 +534,7 @@ class System:
             Vector of initial conditions
 
         parallel: bool
-            Whether to integrate the trajectories in parallel or not.
+            Whether to integrate the trajectories in parallel or not
 
         Returns
         -------

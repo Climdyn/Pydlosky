@@ -9,7 +9,7 @@ def Integrator(func: callable, t_eval: np.ndarray, x0: np.ndarray, param: np.nda
     Parameters
     ----------
     func: callable
-        The vector function, possibly Numba-jitted, ''\bm{F}(t, \bm{X})'' to be integrated. Should have the signature func(t, x, dx, p), where 't' is the time, 'x' is the state vector, 'dx' is the derivative vector and 'p' is a parameter vector (see example below).
+        The vector function, possibly Numba-jitted, ''\bm{F}(t, \bm{X})'' to be integrated. Should have the signature func(t, x, dx, p), where 't' is the time, 'x' is the state vector, 'dx' is the derivative vector and 'p' is a parameter vector (see example below)
 
     t_eval: numpy.ndarray
         Times at which to evaluate solution
