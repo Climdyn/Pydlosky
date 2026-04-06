@@ -12,7 +12,10 @@ The article revisits the Pedlosky quasi-geostrophic model proposed by Joseph Ped
 * Pedlosky, J. (1970). Finite-amplitude baroclinic waves. [Journal of Atmospheric Sciences, 27(1), 15-30](https://doi.org/10.1175/1520-0469(1970)027%3C0015:FABW%3E2.0.CO;2).
 * Pedlosky, J. (1971). Finite-amplitude baroclinic waves with small dissipation. [Journal of Atmospheric Sciences, 28(4), 587-597](https://doi.org/10.1175/1520-0469(1971)028%3C0587:FABWWS%3E2.0.CO;2).
 
-![](https://github.com/Climdyn/Pydlosky/blob/main/Animation/trajectory_animation.gif?raw=true) ![](https://github.com/Climdyn/Pydlosky/blob/main/Animation/basin_animation.gif?raw=true)
+<p float="left">
+  <img src="https://github.com/Climdyn/Pydlosky/blob/main/Animation/trajectory_animation.gif?raw=true" height="320" />
+  <img src="https://github.com/Climdyn/Pydlosky/blob/main/Animation/basin_animation.gif?raw=true" height="320" /> 
+</p>
 
 ## General information
 
