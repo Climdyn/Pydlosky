@@ -5,6 +5,8 @@ Pydlosky is the companion software with the article:
 * Revisiting the dynamical properties of the Pedlosky’s Two-Layer Model for Finite
 Amplitude Baroclinic Waves, De Ro, N., Demaeyer, J., and Vannitsem, S. (2026). Submitted to ...
 
+**Please cite this article if you use (a part of) this software for a publication.**
+
 The article revisits the Pedlosky geophysical model proposed by Joseph Pedlosky in the 1970s:
 
 * Pedlosky, J. (1970). Finite-amplitude baroclinic waves. [Journal of Atmospheric Sciences, 27(1), 15-30](https://doi.org/10.1175/1520-0469(1970)027%3C0015:FABW%3E2.0.CO;2).
