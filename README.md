@@ -17,4 +17,8 @@ Pydlosky includes Python classes to define the model in the [`PedloskySystem`](.
 The study itself is contained in the [project notebook](./Notebook/project_notebook.ipynb) found in the [`Notebook`](./Notebook) folder.
 Fortran and AUTO definition files for this model can also be found in this folder.
 Indeed, this study relies on [auto-07p](https://github.com/auto-07p/auto-07p) and the automation codebase [auto-AUTO](https://github.com/Climdyn/auto-AUTO) to produce the bifurcation diagrams of the model.
-Therefore, the users must follow the [installation instructions](https://github.com/Climdyn/auto-AUTO?tab=readme-ov-file#installation) found on the latter webpage in order for this notebook to fully work.
+Therefore, in addition to creating an [Anaconda](https://www.anaconda.com/) environment with
+
+    conda env create -f environment.yml
+    
+the users must follow the [installation instructions](https://github.com/Climdyn/auto-AUTO?tab=readme-ov-file#installation) found on the latter webpage in order for this notebook to fully work.
