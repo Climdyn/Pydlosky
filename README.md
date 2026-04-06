@@ -10,4 +10,6 @@ The article revisits the Pedlosky geophysical model proposed by Joseph Pedlosky 
 * Pedlosky, J. (1970). Finite-amplitude baroclinic waves. [Journal of Atmospheric Sciences, 27(1), 15-30](https://doi.org/10.1175/1520-0469(1970)027%3C0015:FABW%3E2.0.CO;2).
 * Pedlosky, J. (1971). Finite-amplitude baroclinic waves with small dissipation. [Journal of Atmospheric Sciences, 28(4), 587-597](https://doi.org/10.1175/1520-0469(1971)028%3C0587:FABWWS%3E2.0.CO;2).
 
-It includes Python classes to define
+Pydlosky includes Python classes to define the model in the [`PedloskySystem`](https://github.com/Climdyn/Pydlosky/tree/main/PedloskySystem) folder. This folder also includes specific integrators which relies on [numbalsoda](https://github.com/Nicholaswogan/NumbaLSODA) to perform the various ordinary differential equations time integrations in the study.
+
+
