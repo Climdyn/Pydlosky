@@ -26,3 +26,11 @@ Therefore, in addition to creating an [Anaconda](https://www.anaconda.com/) envi
     conda env create -f environment.yml
     
 the users must follow the [installation instructions](https://github.com/Climdyn/auto-AUTO?tab=readme-ov-file#installation) found on the auto-AUTO webpage in order for this notebook to fully work.
+
+Once the installation has been performed, the user can start `jupyter-notebook`:
+
+    conda activate pydlosky
+    cd Notebook
+    jupyter-notebook
+
+and load the project notebook.
