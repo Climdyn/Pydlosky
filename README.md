@@ -1,5 +1,7 @@
 # Pydlosky
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19452068.svg)](https://doi.org/10.5281/zenodo.19452068)
+
 Pydlosky is the companion software with the article:
 
 * Revisiting the dynamical properties of the Pedlosky’s Two-Layer Model for Finite
