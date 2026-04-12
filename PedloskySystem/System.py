@@ -231,7 +231,7 @@ def sum_part(X: np.ndarray, kc: int, a: float, m: int) -> float:
 @cfunc(lsoda_sig)
 def system_ODE(t, X: np.ndarray, dX: np.ndarray, p: np.ndarray) -> None:
     """
-    Defines the system of ODEs of the dynamical system in terms of the functions defined in the "System" module, see Eqs. (16a)-(16c) in the paper.
+    Defines the system of ODEs of the dynamical system, see Eqs. (15a)-(15c) in the paper.
 
     Parameters
     ----------
