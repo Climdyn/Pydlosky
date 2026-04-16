@@ -4,7 +4,7 @@
 
 Pydlosky is the companion software with the article:
 
-* Revisiting the Dynamical Properties of Pedlosky's Two-Layer Model for Finite Amplitude Baroclinic Waves, De Ro, N., Demaeyer, J., and Vannitsem, S. (2026). Submitted to ...
+* Revisiting the Dynamical Properties of Pedlosky's Two-Layer Model for Finite Amplitude Baroclinic Waves, De Ro, N., Demaeyer, J., and Vannitsem, S. (2026). Submitted to *Chaos: An Interdisciplinary Journal of Nonlinear Science*. [[preprint](https://arxiv.org/abs/2604.14123)]
 
 **Please cite this article if you use (a part of) this software for a publication.**
 
